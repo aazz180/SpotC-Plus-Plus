@@ -55,24 +55,31 @@ In version 2.2.0 the option to use Musixmatch as a lyric provider was added, you
 5. Paste this into SpotC++, when it asks you for your user token.<br/>
 </details>
 
-## How it's Made<br/>
-I post a new release every time there is an EeveeSpotify/Sposify Update, or there is a new major Spotify update that is compatible with both the latest EeveeSpotify and the latest Sposify. I get the vanilla Spotify IPA from IOS God's [Decrypted AppStore](https://armconverter.com/decryptedappstore/us/spotify), from green verified links on [AppDB](https://appdb.to/app/ios/324684580), or using [BagBak](https://github.com/ChiChou/bagbak), with my personal jailbroken iPhone XR. I will specify details on each release page. Then I download the latest EeveeSpotify .deb and SwiftProtobuf framework .deb (dependency) from Eevee's release page [here](https://github.com/whoeevee/EeveeSpotify/releases/latest) and Orion Runtime (iOS 14 - 16) off of Chariz [here](https://chariz.com/get/orion-runtime14) (it's a dependency). I also download the latest commit of Eevee's [OpenSpotifySafariExtension](https://github.com/whoeevee/OpenSpotifySafariExtension). As well as the latest Sposify .deb from  Dynastic repo [here](https://repo.dynastic.co/package/com.spos). Sposify has bugs that are patched by [SposifyFix](https://level3tjg.me/repo) by level3tjg, I download this aswell. I download the tweaks directly from the sources. I then inject the .deb's and .appx into the Spotify IPA using [my fork](https://github.com/SpotCompiled/pyzule-rw) of [Cyan](https://github.com/asdfzxcvbn/pyzule-rw), and change the IPA version and Bundle ID to the SpotC++ version and Bundle ID. (For the AltStore Version) I do not do anything else to the IPA (Unless otherwise specified in the release notes)... All of this and more is automated using the completely open-source GitHub Workflow script available [here](https://github.com/SpotCompiled/SpotC-Plus-Plus/blob/main/.github/workflows/Build%20and%20Release.yml).
+## How it's Made  
+I post a new release every time there is an EeveeSpotify/Sposify Update, or there is a new major Spotify update that is compatible with both the latest EeveeSpotify and the latest Sposify. I get the vanilla Spotify IPA from IOS God's [Decrypted AppStore](https://armconverter.com/decryptedappstore/us/spotify), from green verified links on [AppDB](https://appdb.to/app/ios/324684580), or using [BagBak](https://github.com/ChiChou/bagbak), with my personal jailbroken iPhone XR. I will specify details on each release page. Then I download the latest EeveeSpotify .deb and SwiftProtobuf framework .deb (dependency) from Eevee's release page [here](https://github.com/whoeevee/EeveeSpotify/releases/latest) and Orion Runtime (iOS 14 - 16) off of Chariz [here](https://chariz.com/get/orion-runtime14) (it's a dependency). I also download the latest commit of Eevee's [OpenSpotifySafariExtension](https://github.com/whoeevee/OpenSpotifySafariExtension). As well as the latest Sposify .deb from Dynastic repo [here](https://repo.dynastic.co/package/com.spos). Sposify has bugs that are patched by [SposifyFix](https://level3tjg.me/repo) by level3tjg, I download this as well.  
 
-Version Format is *SpotC++ Version*\_*Spotify Version*<br/>
-Ex. *v1.3.6*\_*v8.7.78*<br/>
+In addition, SpotC++ now includes the [SpotifyEqualizerEnhancer](https://www.ios-repo-updates.com/repository/level3tjg/package/com.level3tjg.spotifyequalizerenhancer/) by level3tjg, which enhances the Spotify audio experience with a custom equalizer system for improved sound quality and user control.  
 
-## Credits:<br/>
-[IOS God's Decrypted App Store](https://armconverter.com/decryptedappstore/us/spotify) and [AppDB](https://appdb.to/app/ios/324684580)- *Decrypted Vanilla Spotify IPA*<br/>
-[julioverne-  Spotilife](https://julio.hackyouriphone.org/) *For the original Spotilife tweak*<br/>
-[aesthyrica- Sposify](https://repo.dynastic.co/package/com.spos) *For Sposify tweaked  .deb*<br/>
-[Whoeevee-  EeveeSpotify](https://github.com/whoeevee/EeveeSpotify) *For EeveeSpotify tweaked .deb*<br/>
-[ChiChou & Asdfzxcvbn-  BagBak](https://github.com/ChiChou/bagbak) *For BagBak used to decrypt .ipa*<br/>
-[Asdfzxcvbn-  Cyan](https://github.com/asdfzxcvbn/pyzule-rw) *Used to inject tweaks and modify the .ipa*<br/>
-[Theos Team-  Orion Runtime (iOS 14 - 16)](https://chariz.com/get/orion-runtime14) *For Orion Runtime (iOS 14 - 16) tweaked .deb*<br/>
-[Apple inc.-  Swift Protobuf](https://github.com/apple/swift-protobuf)<br/>
-[level3tjg- Sposify Fix](https://level3tjg.me/repo/) *For Sposify Fix tweaked  .deb*<br/>
-[Am1nCmd- Spotify++](https://appdb.to/app/cydia/1900000540) *For ScreenShots*<br/>
-[@RobyRew](https://github.com/RobyRew) *For helping me setup a lot of things*
+I download the tweaks directly from the sources. I then inject the .deb's and .appx into the Spotify IPA using [my fork](https://github.com/SpotCompiled/pyzule-rw) of [Cyan](https://github.com/asdfzxcvbn/pyzule-rw), and change the IPA version and Bundle ID to the SpotC++ version and Bundle ID. (For the AltStore Version) I do not do anything else to the IPA (Unless otherwise specified in the release notes)... All of this and more is automated using the completely open-source GitHub Workflow script available [here](https://github.com/SpotCompiled/SpotC-Plus-Plus/blob/main/.github/workflows/Build%20and%20Release.yml).  
+
+Version Format is *SpotC++ Version*\_*Spotify Version*  
+Ex. *v1.3.6*\_*v8.7.78*  
+
+## Credits:  
+[IOS God's Decrypted App Store](https://armconverter.com/decryptedappstore/us/spotify) and [AppDB](https://appdb.to/app/ios/324684580) - *Decrypted Vanilla Spotify IPA*  
+[julioverne - Spotilife](https://julio.hackyouriphone.org/) *For the original Spotilife tweak*  
+[aesthyrica - Sposify](https://repo.dynastic.co/package/com.spos) *For Sposify tweaked .deb*  
+[Whoeevee - EeveeSpotify](https://github.com/whoeevee/EeveeSpotify) *For EeveeSpotify tweaked .deb*  
+[ChiChou & Asdfzxcvbn - BagBak](https://github.com/ChiChou/bagbak) *For BagBak used to decrypt .ipa*  
+[Asdfzxcvbn - Cyan](https://github.com/asdfzxcvbn/pyzule-rw) *Used to inject tweaks and modify the .ipa*  
+[Theos Team - Orion Runtime (iOS 14 - 16)](https://chariz.com/get/orion-runtime14) *For Orion Runtime (iOS 14 - 16) tweaked .deb*  
+[Apple Inc. - Swift Protobuf](https://github.com/apple/swift-protobuf)  
+[level3tjg - Sposify Fix](https://level3tjg.me/repo/) *For Sposify Fix tweaked .deb*  
+[level3tjg - SpotifyEqualizerEnhancer](https://level3tjg.me/repo/) *For Spotify Equalizer Enhancer tweaked .deb*  
+[Am1nCmd - Spotify++](https://appdb.to/app/cydia/1900000540) *For ScreenShots*  
+[@RobyRew](https://github.com/RobyRew) *For helping me setup a lot of things*  
+[@aazz180](https://github.com/aazz180) *For Spotify Equalizer Enhancer integration*
+
 ***
 <sup>We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with any other company, agency, or government agency. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
 
